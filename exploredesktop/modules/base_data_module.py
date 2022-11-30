@@ -375,7 +375,8 @@ class BasePlots:
         Returns:
             list: position lines with updated time pos
         """
-        pos = t_vector[self.model.pointer - 1]
+        # pos = t_vector[self.model.pointer - 1]
+        pos = self.model.last_t
 
         if None in self.lines:
             for idx, plt in enumerate(self.plots_list):

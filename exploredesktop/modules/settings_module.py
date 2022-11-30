@@ -558,7 +558,9 @@ class SettingsFrameView(BaseModel):
         settings_dict = yaml.load(stream, Loader=yaml.SafeLoader)
         return settings_dict
 
-    def convert_bin(self):
+    def convert_bin(self) -> None:
+        """Convert BIN file to csv/bdf
+        """
         dialog = ConvertBinDialog()
         data = dialog.exec()
         print(data)

@@ -277,4 +277,3 @@ class ExploreInterface(Explore):
 
     def get_settings(self):
         self.settings.load_current_settings()
-        print(f"{self.settings.settings_dict=}")
